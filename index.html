@@ -1,89 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alexander Arthur Gordon | Author</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author Landing Page</title>
+  <!-- Google Fonts: Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="social-sidebar">
-    <a href="https://x.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://tiktok.com/@yourhandle" target="_blank"><i class="fab fa-tiktok"></i></a>
-    <a href="https://spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
-    <a href="https://music.apple.com" target="_blank"><i class="fab fa-apple"></i></a>
-  </div>
-
-  <nav class="navbar">
-    <img src="logo.png" alt="Logo" class="logo">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#works">Works</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#media">Media</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#downloads">Downloads</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header id="home" class="section primary-bg">
-    <h1>Alexander Arthur Gordon</h1>
-    <p>Writer of metaphysical odysseys and digital grimoires</p>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="works" class="section secondary-bg">
-    <h2>Works</h2>
-    <div class="work-item">
-      <p>Explore the mythic and the digital. Stories that transcend time, dimensions, and the boundaries of self.</p>
-      <img src="work1.jpg" alt="Work 1">
-    </div>
-    <div class="work-item">
-      <p>Kleio.exe – A journey through the Pneumasphere and other realities.</p>
-      <img src="work2.jpg" alt="Work 2">
+  <aside class="sidebar">
+    <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+    <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+  </aside>
+
+  <section id="about">
+    <h1>About the Author</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in suscipit eros. Curabitur vitae nisl ac nisi convallis porta.</p>
+  </section>
+
+  <section id="books">
+    <h2>Books</h2>
+    <div class="book-gallery">
+      <img src="book1.jpg" alt="Book 1 Cover">
+      <img src="book2.jpg" alt="Book 2 Cover">
+      <img src="book3.jpg" alt="Book 3 Cover">
     </div>
   </section>
 
-  <section id="about" class="section primary-bg">
-    <h2>About</h2>
-    <div class="about-content">
-      <img src="portrait.jpg" alt="Author Portrait">
-      <p>I write with one foot in the arcane, the other in the future. My stories live between the lines of philosophy, horror, and code.</p>
-    </div>
-  </section>
-
-  <section id="media" class="section secondary-bg">
-    <h2>Media</h2>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section id="gallery" class="section primary-bg">
+  <section id="gallery">
     <h2>Gallery</h2>
-    <div class="gallery-grid">
+    <div class="image-gallery">
       <img src="gallery1.jpg" alt="Gallery Image 1">
       <img src="gallery2.jpg" alt="Gallery Image 2">
       <img src="gallery3.jpg" alt="Gallery Image 3">
     </div>
   </section>
 
-  <section id="downloads" class="section secondary-bg">
-    <h2>Downloads</h2>
-    <p>Coming soon: free chapters, wallpapers, and hidden archives.</p>
-  </section>
-
-  <section id="contact" class="section primary-bg">
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Reach out through the Pneumasphere... or just use social media:</p>
+    <p>For inquiries, please email <a href="mailto:author@example.com">author@example.com</a> or fill out the contact form on the website.</p>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Alexander Arthur Gordon. All rights reserved.</p>
-  </footer>
 </body>
 </html>
