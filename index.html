@@ -1,51 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Author Landing Page</title>
-  <!-- Google Fonts: Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Include Google Fonts for Orbitron and Press Start 2P -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <!-- Include Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
+  <!-- Sticky Navigation Header with Logo and Links -->
+  <header class="main-header">
     <div class="logo">
-      <img src="logo.png" alt="Logo">
+      <img src="images/logo.png" alt="Logo" />
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#books">Books</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#media">Media</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <aside class="sidebar">
-    <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-    <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-    <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-  </aside>
+  <!-- Social Media Sidebar -->
+  <div class="social-bar">
+    <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+    <a href="#" aria-label="Apple Music"><i class="fab fa-apple"></i></a>
+  </div>
 
-  <section id="about">
-    <h1>About the Author</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in suscipit eros. Curabitur vitae nisl ac nisi convallis porta.</p>
+  <!-- Home Section -->
+  <section id="home" class="section fade-in">
+    <h1>Author Name</h1>
+    <p>Welcome to the official website of [Author Name], a retro-futuristic storyteller and creator.</p>
   </section>
 
-  <section id="books">
-    <h2>Books</h2>
-    <div class="book-gallery">
-      <img src="book1.jpg" alt="Book 1 Cover">
-      <img src="book2.jpg" alt="Book 2 Cover">
-      <img src="book3.jpg" alt="Book 3 Cover">
+  <!-- Works Section -->
+  <section id="works" class="section section-secondary fade-in">
+    <h2>Works</h2>
+    <div class="works-list">
+      <!-- Example work items -->
+      <div class="work-item">
+        <h3>Work Title 1</h3>
+        <p>A short description of Work 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="images/work1.jpg" alt="Cover of Work Title 1" />
+      </div>
+      <div class="work-item">
+        <h3>Work Title 2</h3>
+        <p>A short description of Work 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="images/work2.jpg" alt="Cover of Work Title 2" />
+      </div>
+      <div class="work-item">
+        <h3>Work Title 3</h3>
+        <p>A short description of Work 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="images/work3.jpg" alt="Cover of Work Title 3" />
+      </div>
     </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section fade-in">
+    <h2>About the Author</h2>
+    <div class="about-content">
+      <img src="images/author.jpg" alt="Portrait of the author" class="portrait" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in suscipit eros. Curabitur vitae nisi ac nisi convallis porta. Integer vel dolor sit amet velit ultricies vehicula.</p>
+    </div>
+  </section>
+
+  <!-- Media Section -->
+  <section id="media" class="section section-secondary fade-in">
+    <h2>Media</h2>
+    <p>Explore media appearances, interviews, and audio-visual content related to the author and their works:</p>
+    <ul class="media-list">
+      <li><a href="#">Interview on Podcast XYZ</a></li>
+      <li><a href="#">Article in Magazine ABC</a></li>
+      <li><a href="#">YouTube Reading of an Excerpt</a></li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section fade-in">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery Image 1" /></div>
+      <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery Image 2" /></div>
+      <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery Image 3" /></div>
+      <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery Image 4" /></div>
+      <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery Image 5" /></div>
+      <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery Image 6" /></div>
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads" class="section section-secondary fade-in">
+    <h2>Downloads</h2>
+    <p>Download e-books, sample chapters, and other resources:</p>
+    <ul class="downloads-list">
+      <li><a href="#">Download Sample Chapter (PDF)</a></li>
+      <li><a href="#">Download Press Kit (ZIP)</a></li>
+      <li><a href="#">Download Wallpaper Pack</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p>For inquiries, please email <a href="mailto:author@example.com">author@example.com</a> or fill out the contact form below:</p>
+    <form class="contact-form" action="#" method="post">
+      <p><label for="name">Name:</label> <input type="text" id="name" name="name" required /></p>
+      <p><label for="email">Email:</label> <input type="email" id="email" name="email" required /></p>
+      <p><label for="message">Message:</label> <textarea id="message" name="message" rows="4" required></textarea></p>
+      <p><button type="submit">Send</button></p>
+    </form>
+  </section>
+
+  <!-- JavaScript for fade-in animations on scroll -->
+  <script>
+    // Observe elements with class "fade-in" and add "show" when they enter the viewport
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+
   </section>
 
   <section id="gallery">
